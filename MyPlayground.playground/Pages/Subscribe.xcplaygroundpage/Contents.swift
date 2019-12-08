@@ -1,6 +1,7 @@
 import UIKit
 import App
 import RxSwift
+import RxCocoa
 
 enum HogeError: Error {
     case errordayo
