@@ -11,6 +11,8 @@
 		1906FFCF239CADAF00FB481F /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1906FFCB239CADAF00FB481F /* RxRelay.framework */; };
 		1906FFD0239CADAF00FB481F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1906FFCC239CADAF00FB481F /* RxCocoa.framework */; };
 		1906FFD1239CADAF00FB481F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1906FFCD239CADAF00FB481F /* RxSwift.framework */; };
+		1964A4B3239DF5EC008EE011 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1964A4B2239DF5EC008EE011 /* App.swift */; };
+		1964A4C5239DF611008EE011 /* App.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1964A4B2239DF5EC008EE011 /* App.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		199A6891239C99FB00BAF5FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A6890239C99FB00BAF5FE /* AppDelegate.swift */; };
 		199A6893239C99FB00BAF5FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A6892239C99FB00BAF5FE /* SceneDelegate.swift */; };
 		199A6895239C99FB00BAF5FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A6894239C99FB00BAF5FE /* ContentView.swift */; };
@@ -20,8 +22,6 @@
 		199A68AD239C9AB300BAF5FE /* App.h in Headers */ = {isa = PBXBuildFile; fileRef = 199A68AB239C9AB300BAF5FE /* App.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		199A68B0239C9AB300BAF5FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A68A9239C9AB300BAF5FE /* App.framework */; };
 		199A68B1239C9AB300BAF5FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 199A68A9239C9AB300BAF5FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		199A68BC239C9E5200BAF5FE /* Log.swift in Headers */ = {isa = PBXBuildFile; fileRef = 199A68B7239C9ADE00BAF5FE /* Log.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		199A68BD239C9E5A00BAF5FE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A68B7239C9ADE00BAF5FE /* Log.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +180,7 @@
 		1906FFD5239CAE8E00FB481F /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
 		1906FFD6239CB0B400FB481F /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Carthage/Checkouts/RxSwift/Rx.xcodeproj; sourceTree = "<group>"; };
 		194D1A7A239CB2BD0036C069 /* RxOptional.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RxOptional.xcodeproj; path = Carthage/Checkouts/RxOptional/RxOptional.xcodeproj; sourceTree = "<group>"; };
+		1964A4B2239DF5EC008EE011 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		199A688D239C99FB00BAF5FE /* MyPlaygrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaygrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A6890239C99FB00BAF5FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		199A6892239C99FB00BAF5FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,7 +192,6 @@
 		199A68A9239C9AB300BAF5FE /* App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A68AB239C9AB300BAF5FE /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		199A68AC239C9AB300BAF5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		199A68B7239C9ADE00BAF5FE /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,7 +312,7 @@
 		199A68B6239C9ACE00BAF5FE /* src */ = {
 			isa = PBXGroup;
 			children = (
-				199A68B7239C9ADE00BAF5FE /* Log.swift */,
+				1964A4B2239DF5EC008EE011 /* App.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				199A68AD239C9AB300BAF5FE /* App.h in Headers */,
-				199A68BC239C9E5200BAF5FE /* Log.swift in Headers */,
+				1964A4C5239DF611008EE011 /* App.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,7 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				199A68BD239C9E5A00BAF5FE /* Log.swift in Sources */,
+				1964A4B3239DF5EC008EE011 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

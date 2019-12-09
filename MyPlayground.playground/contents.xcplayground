@@ -4,5 +4,6 @@
         <page name='Subscribe'/>
         <page name='RelayTermination'/>
         <page name='Relay'/>
+        <page name='Materialize'/>
     </pages>
 </playground>
