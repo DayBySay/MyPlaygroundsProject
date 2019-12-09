@@ -51,7 +51,7 @@ elements.subscribe(onNext: { (str) in
     print("elements disposed")
 }
 
-error.subscribe(onNext: { (str) in
+errors.subscribe(onNext: { (str) in
     print("error next: \(str)")
 }, onError: { (error) in
     print("error error: \(error)")
@@ -61,6 +61,23 @@ error.subscribe(onNext: { (str) in
     print("error disposed")
 }
 
-
+DispatchQueue.main.async {
+    input.accept("h.o.g.e")
+    DispatchQueue.main.async {
+        input.accept("f.u.g.a")
+        DispatchQueue.main.async {
+            input.accept("")
+            DispatchQueue.main.async {
+                input.accept("n.y.a.n")
+                DispatchQueue.main.async {
+                    input.accept("")
+                    DispatchQueue.main.async {
+                        input.accept("n.y.a.s.s.u")
+                    }
+                }
+            }
+        }
+    }
+}
 
 //: [Next](@next)
